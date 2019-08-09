@@ -1,0 +1,36 @@
+<div class="container">
+    <form [formGroup]="searchFormGroup" (ngSubmit)="onSubmit()">
+        <div class="col-lg-8 col-sm-8">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                    From
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <input class="col-lg-8 col-sm-8" type="text" formControlName="fromStation" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    {{f.fromStation.value}}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-sm-8">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                    To
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <input class="col-lg-8 col-sm-8" type="text" formControlName="toStation" />
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    {{f.toStation.value}}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-sm-8">
+            <div class="row">
+                <button type="submit" [disabled]="!searchFormGroup.valid">Submit</button>
+            </div>
+        </div>
+
+    </form>
+</div>
