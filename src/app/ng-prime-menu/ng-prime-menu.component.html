@@ -1,15 +1,2 @@
-<p>---------------------ng-prime-menu below ------------</p>
-<p-menu #menu [popup]="true" [model]="items"></p-menu>
-
-<button type="button" pButton iconPos="right" [label]="appName" (click)="menu.toggle($event)" ></button>
-
-
-<p>---------------------ng-prime-menu END ------------</p>
-<div class="c-context-inner-div">
-        <p-menubar [model]="items" autoZIndex=true>
-                <div>
-                    <input type="text" pInputText placeholder="Search">
-                    <button pButton label="Logout" icon="fa fa-sign-out" style="margin-left:.25em"></button>
-                </div>
-            </p-menubar>
-</div>
+<p-menubar [model]="items" [autoDisplay]="false"> 
+</p-menubar>

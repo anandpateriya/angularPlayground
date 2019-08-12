@@ -14,6 +14,7 @@ import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgPrimeMenuComponent } from './ng-prime-menu/ng-prime-menu.component';
+import { RouterModule } from "@angular/router";
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { NgPrimeMenuComponent } from './ng-prime-menu/ng-prime-menu.component';
     MenubarModule,
     MenuModule,
     ButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
