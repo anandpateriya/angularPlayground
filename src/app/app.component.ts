@@ -6,7 +6,7 @@ import { Component, HostListener, ElementRef } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Indian Railways';
+  title = 'Angular Playground';
 
 
   constructor(private el: ElementRef){
